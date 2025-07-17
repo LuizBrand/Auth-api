@@ -20,7 +20,7 @@ public class Role implements GrantedAuthority {
     private Long id;
 
     @Enumerated(EnumType.STRING)
-    @Column(unique = true, nullable = false)
+    @Column(length = 50, unique = true, nullable = false)
     private RoleName name;
 
     @ManyToMany(mappedBy = "roles")
