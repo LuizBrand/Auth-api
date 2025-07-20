@@ -2,8 +2,7 @@ package com.LuizBrand.AuthRoles.entity;
 
 import com.LuizBrand.AuthRoles.enums.RoleName;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 
 import java.util.HashSet;
@@ -11,6 +10,9 @@ import java.util.Set;
 
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
+@Builder
+@Setter
 @Entity
 @Table(name = "roles")
 public class Role implements GrantedAuthority {

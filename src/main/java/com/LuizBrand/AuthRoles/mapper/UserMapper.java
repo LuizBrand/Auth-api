@@ -1,5 +1,6 @@
 package com.LuizBrand.AuthRoles.mapper;
 
+import com.LuizBrand.AuthRoles.dto.request.UserRequest;
 import com.LuizBrand.AuthRoles.dto.response.UserResponse;
 import com.LuizBrand.AuthRoles.entity.User;
 import lombok.experimental.UtilityClass;
@@ -7,10 +8,10 @@ import lombok.experimental.UtilityClass;
 @UtilityClass
 public class UserMapper {
 
-    public static User toUser(UserResponse userResponse) {
+    public static User toUser(UserRequest userRequest) {
         return User.builder()
-                .id(userResponse.id())
-                .username(userResponse.username())
+                .username(userRequest.username())
+                .password(userRequest.password())
                 .build();
 
     }
