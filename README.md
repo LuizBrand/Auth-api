@@ -75,9 +75,9 @@ The API provides the following EndPoints:
   ```
 - Login Response
     ```json
-        {
-            "token": "jwt-token"
-        }
+  {
+        "token": "jwt-token"
+  }
   ```
 - Users\
   `GET /user` - List all users (USER and ADMIN, JWT required)\
