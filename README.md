@@ -1,6 +1,5 @@
 # AuthRoles API
 
----
 
 Java • Spring Boot • Spring Security • PostgreSQL (Docker) • JWT • Flyway
 
@@ -9,7 +8,6 @@ This project demonstrates how to implement secure user registration, login, and 
 
 ## Table of Contents
 
----
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Installation](#installation)
@@ -21,7 +19,6 @@ This project demonstrates how to implement secure user registration, login, and 
 
 ## Features
 
----
 - User registration and login with JWT authentication
 - Role-based access control (USER, ADMIN)
 - Secure endpoints with Spring Security
@@ -31,7 +28,6 @@ This project demonstrates how to implement secure user registration, login, and 
 
 ## Tech Stack
 
----
 - Java 21+
 - Spring Boot
 - Spring Security
@@ -41,7 +37,6 @@ This project demonstrates how to implement secure user registration, login, and 
 
 ## Installation
 
----
 ### 1. Clone the repository
 
 ```bash
@@ -58,13 +53,11 @@ docker run --name authroles -e POSTGRES_DB=authroles -e POSTGRES_USER=postgres -
 
 ## Usage
 
----
 1.Start the application with Maven\
 2.The API will be accessible at http://localhost:8080
 
 ## API Endpoints
 
----
 The API provides the following EndPoints:
 - `POST /auth/register` - Register a new user  
     ```json
@@ -92,7 +85,6 @@ The API provides the following EndPoints:
 
 ## Authentication & Roles
 
----
 - **USER**: Default role for registered users.
 - **ADMIN**: Can manage users and access admin endpoints.
 
@@ -100,13 +92,11 @@ To access protected endpoints, send the JWT in the `Authorization` header.
 
 ## Database
 
----
 - PostgreSQL (can be run via Docker)
 - Automatic migrations with Flyway (`db/migration`)
 
 ## Contributing
 
----
 Contributions are welcome!  
 If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
