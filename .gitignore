@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+## Migration that isn't necessary
+src/main/resources/db/migration/V4__insert_initial_data.sql
+
